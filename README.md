@@ -18,3 +18,6 @@ http://localhost:8080/swagger-ui.html
 
 Unit test case code coverage is exposed through jococo report:
 ../target/site/jacoco/index.html
+
+log location: /temp/log/
+
