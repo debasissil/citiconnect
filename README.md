@@ -7,8 +7,8 @@ Philadelphia,Pittsburgh
 Boston,New York
 Hartford,New York
 
-input - Boston -> New York output will be 'Yes'.
-input - Boston -> Pittsburgh output will be 'No'.
+Boston -> New York output will be 'Yes'.
+Boston -> Pittsburgh output will be 'No'.
 
 The exposed end point is as follows:
 http://localhost:8080/connected?origin=city1&destination=city2
