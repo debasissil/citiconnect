@@ -12,6 +12,12 @@ import org.springframework.stereotype.Component;
 
 import com.mastercard.excercise.citiconnect.model.City;
 
+/**
+ * The service class uses BFS algo to calculate the connection between cities.
+ * 
+ * @author debas
+ *
+ */
 @Component
 public class ConnectionCalculatorImpl implements ConnectionCalculatorService {
 
