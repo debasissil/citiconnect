@@ -12,11 +12,13 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 
+import com.mastercard.excercise.citiconnect.model.City;
+
 public class ConnectionCalculatorTest { 
 	
 	@InjectMocks
 	@Spy
-	private ConnectionCalculator mockConnectionCalculator;
+	private ConnectionCalculatorImpl mockConnectionCalculator;
 	
 	@Mock
 	private DataLoader dataLoader;

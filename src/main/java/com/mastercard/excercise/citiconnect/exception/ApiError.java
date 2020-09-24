@@ -7,13 +7,14 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.mastercard.excercise.citiconnect.constants.ApiConstants;
 
 public class ApiError {
 
 	private HttpStatus status;
 	private String message;
 	private List<String> errors;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = ApiConstants.DATE_PATTERN)
 	private LocalDateTime timestamp;
 
 	private ApiError() {

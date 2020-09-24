@@ -16,6 +16,8 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import com.mastercard.excercise.citiconnect.model.City;
+
 /**
  * 
  * This class loads all the data from property file and

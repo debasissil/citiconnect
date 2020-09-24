@@ -10,12 +10,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.google.common.annotations.VisibleForTesting;
+import com.mastercard.excercise.citiconnect.model.City;
 
 @Component
-public class ConnectionCalculator {
+public class ConnectionCalculatorImpl implements ConnectionCalculatorService {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(ConnectionCalculator.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(ConnectionCalculatorImpl.class);
 
 	@Autowired
 	DataLoader dataLoader;

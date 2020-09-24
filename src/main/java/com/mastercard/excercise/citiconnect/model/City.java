@@ -1,4 +1,4 @@
-package com.mastercard.excercise.citiconnect.service;
+package com.mastercard.excercise.citiconnect.model;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -21,9 +21,6 @@ public class City {
 		this.name = name.trim().toUpperCase();
 	}
 
-	/*public City create(String name) {
-		return new City(name);
-	}*/
 
 	@Override
 	public String toString() {

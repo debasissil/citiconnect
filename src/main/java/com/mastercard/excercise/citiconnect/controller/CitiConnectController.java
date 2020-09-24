@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mastercard.excercise.citiconnect.service.City;
-import com.mastercard.excercise.citiconnect.service.ConnectionCalculator;
+import com.mastercard.excercise.citiconnect.constants.ApiConstants;
+import com.mastercard.excercise.citiconnect.model.City;
+import com.mastercard.excercise.citiconnect.service.ConnectionCalculatorService;
 import com.mastercard.excercise.citiconnect.service.DataLoader;
 
 import io.swagger.annotations.ApiParam;
@@ -17,7 +18,7 @@ import io.swagger.annotations.ApiParam;
 public class CitiConnectController {
 
 	@Autowired
-	ConnectionCalculator connectionCalculator;
+	ConnectionCalculatorService connectionCalculatorService;
 
 	@Autowired
 	DataLoader dataLoader;
@@ -44,10 +45,10 @@ public class CitiConnectController {
 
 		if (originCity != null && destinationCity != null) {
 
-			searchConnection = connectionCalculator.searchConnection(originCity, destinationCity);
+			searchConnection = connectionCalculatorService.searchConnection(originCity, destinationCity);
 		}
 
-		String yesOrNo = searchConnection ? "Yes" : "No";
+		String yesOrNo = searchConnection ? ApiConstants.YES : ApiConstants.NO;
 
 		return yesOrNo;
 	}
